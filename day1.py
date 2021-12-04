@@ -9,13 +9,14 @@ print("Increases:", inc)
 
 # Part 2
 num = 0
-if array[0] < array[1]:
-    
 for i in range(len(array) - 5):
-    currWindow = array[i:i+2]
-    nextWindow = array[i+1:i+3]
+    currWindow = array[i:i+3]
+    #print(currWindow)
+    nextWindow = array[i+1:i+4]
     currSum = sum(currWindow)
     nextSum = sum(nextWindow)
+    #print(currSum, nextSum)
     if currSum < nextSum:
+        #print("increase")
         num += 1
-print(num)
+print("Window Increases:", num)
