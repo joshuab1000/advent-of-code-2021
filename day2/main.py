@@ -16,4 +16,4 @@ with open('input.txt') as f:
         elif direction == 'down':
             depth += num
 
-    print("Depth * Horizontal Position =", (depth * horizontalPos))
+print("Depth * Horizontal Position =", (depth * horizontalPos))
