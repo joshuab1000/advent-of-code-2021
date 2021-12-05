@@ -9,7 +9,7 @@ print("Increases:", inc)
 
 # Part 2
 num = 0
-for i in range(len(array) - 5):
+for i in range(len(array)):
     currWindow = array[i:i+3]
     #print(currWindow)
     nextWindow = array[i+1:i+4]
